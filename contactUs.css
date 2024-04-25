@@ -1,0 +1,321 @@
+/* Styles for smaller mobile phones */
+@media (max-width: 480px) {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D6C3C3;
+}
+
+.contact {
+  background-color: #153448;
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+.location {
+  text-align: center;
+  background-color: #0E222E;
+  padding: 20px;
+}
+
+.location img{
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoursOfOperation {
+  text-align: center;
+  background-color: #153448;
+  padding: 20px;
+}
+
+.feedback {
+  text-align: center;
+  background-color: #93AAB9;
+  padding: 25px;
+  color: #0E222E;
+}
+
+.feedback .feedbackForm {
+  text-align: left;
+}
+
+.feedbackForm .visitorFeedback {
+  padding: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0E222E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+}
+
+/* Styles for larger mobile phones*/
+@media (min-width: 481px) and (max-width: 768px) {
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D6C3C3;
+}
+
+.contact {
+  background-color: #153448;
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+.location {
+  text-align: center;
+  background-color: #0E222E;
+  padding: 20px;
+}
+
+.location img{
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoursOfOperation {
+  text-align: center;
+  background-color: #153448;
+  padding: 20px;
+}
+
+.feedback {
+  text-align: center;
+  background-color: #93AAB9;
+  padding: 25px;
+  color: #0E222E;
+}
+
+.feedback .feedbackForm {
+  text-align: left;
+}
+
+.feedbackForm .visitorFeedback {
+  padding: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0E222E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+}
+
+/* Styles for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D6C3C3;
+}
+
+.contact {
+  background-color: #153448;
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+.location {
+  text-align: center;
+  background-color: #0E222E;
+  padding: 20px;
+}
+
+.location img{
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoursOfOperation {
+  text-align: center;
+  background-color: #153448;
+  padding: 20px;
+}
+
+.feedback {
+  text-align: center;
+  background-color: #93AAB9;
+  padding: 25px;
+  color: #0E222E;
+}
+
+.feedback .feedbackForm {
+  text-align: left;
+}
+
+.feedbackForm .visitorFeedback {
+  padding: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0E222E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+}
+
+/* Styles for desktops */
+@media (min-width: 1025px) {
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D6C3C3;
+}
+
+.contact {
+  background-color: #153448;
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+.location {
+  text-align: center;
+  background-color: #0E222E;
+  padding: 20px;
+}
+
+.location img{
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoursOfOperation {
+  text-align: center;
+  background-color: #153448;
+  padding: 20px;
+}
+
+.feedback {
+  text-align: center;
+  background-color: #93AAB9;
+  padding: 25px;
+  color: #0E222E;
+}
+
+.feedback .feedbackForm {
+  text-align: left;
+}
+
+.feedbackForm .visitorFeedback {
+  padding: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0E222E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+}
