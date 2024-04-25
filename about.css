@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     background-color: #ddd;
-    background-image: url('/img/lib-bg.jpg'); /* Add background image */
+    background-image: url('img/lib-bg.jpg'); /* Add background image */
     background-size: cover; /* Adjust background image size */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center; /* Center the background image */
@@ -103,7 +103,7 @@
         width: 100%;
         min-height: 100vh;
         background-color: #ddd;
-        background-image: url('/img/lib-bg.jpg'); /* Add background image */
+        background-image: url('img/lib-bg.jpg'); /* Add background image */
         background-size: cover; /* Adjust background image size */
         background-repeat: no-repeat; /* Prevent background image from repeating */
         background-position: center; /* Center the background image */
