@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 body{
@@ -13,7 +17,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #153448;
-    padding: 20px;
+    padding: px;
     color: #fff;
     position: fixed; /* Fix the container to the top */
     width: 100%;
@@ -59,6 +63,7 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     padding-top: 10%;
+    color:#fff;
 }
 
 .background-photo {
@@ -83,16 +88,64 @@ form {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    text-align: center;
+    opacity: 5;
 }
 
 .book-item {
-    flex: 0 0 30%; /* Each book item occupies 30% of the container */
+    flex: 1; /* Each book item occupies 30% of the container */
     padding: 10px;
 }
 
 .book-img { 
     width: 50%;
+}
+.book-item p {
+  color: #fff;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+}
+/*button*/
+.search-box {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* I-adjust ang laki ng icon */
+button[type="submit"] i {
+  font-size: 18px;
+}
+/*footer*/
+
+.footer {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {

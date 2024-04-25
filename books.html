@@ -19,7 +19,7 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="books.html">BOOKS</a></li>
-          <li><a href="#">ABOUT US</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="#">MEMBERSHIP</a></li>
           <li><a href="#">CONTACT US</a></li>
         </ul>
@@ -31,21 +31,54 @@
     <h1>BOOKS</h1>
 
     <form action="">
-      <input type="text" placeholder="Search" />
-      <button type="submit">Submit</button>
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
     </form>
+    
     <div class="wrapper">
       <div class="book-item">
         <img src="img/gatsby.jpg" alt="" class="book-img" />
         <p>The Great Gatsby</p>
       </div>
       <div class="book-item">
-        <img src="img/mockingbird.jpg" alt="" class="book-img" />
-        <p>To Kill a Mockingbird</p>
+        <img src="img/thiefbook.jpg" alt="" class="book-img" />
+        <p> The book Thief</p>
       </div>
       <div class="book-item">
         <img src="img/quixote.jpg" alt="" class="book-img" />
         <p>Don Quixote</p>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="book-item">
+        <img src="img/wind.jpg" alt="" class="book-img" />
+        <p>Gone The Wind</p>
+      </div>
+      <div class="book-item">
+        <img src="img/inthenight.jpg" alt="" class="book-img" />
+        <p> Tender is the Night</p>
+      </div>
+      <div class="book-item">
+        <img src="img/grapes.jpg" alt="" class="book-img" />
+        <p>Grapes of Wrath</p>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="book-item">
+        <img src="img/fallapart.jpg" alt="" class="book-img" />
+        <p>Things Fall Apart</p>
+      </div>
+      <div class="book-item">
+        <img src="img/eatshoot.jpg" alt="" class="book-img" />
+        <p> Eats, Shoot & Leaves</p>
+      </div>
+      <div class="book-item">
+        <img src="img/coldblood.jpg" alt="" class="book-img" />
+        <p>In Cold Blood</p>
       </div>
     </div>
 
@@ -57,6 +90,11 @@
             .querySelector(".header nav ul")
             .classList.toggle("nav-active");
         });
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Library System. All rights reserved.</p>
+      
+    </footer>
   </body>
 </html>
