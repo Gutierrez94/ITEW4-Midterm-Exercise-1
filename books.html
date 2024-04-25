@@ -21,7 +21,10 @@
           </ul>
         </nav>
     </div>
-    <h1>Books Section</h1>
+
+    <div class="background-photo"></div>
+
+    <h1>BOOKS</h1>
 
     <form action="">
         <input type="text" placeholder="Search">
@@ -41,5 +44,12 @@
             <p>Don Quixote</p>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.header nav button').addEventListener('click', function() {
+  document.querySelector('.header nav ul').classList.toggle('nav-active');
+});
+
+    </script>
 </body>
 </html>

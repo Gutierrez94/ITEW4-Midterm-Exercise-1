@@ -61,6 +61,18 @@ h1 {
     padding-top: 10%;
 }
 
+.background-photo {
+  background-image: url("img/lib-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Fix the background to cover the entire screen */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Lower z-index to ensure it's behind other elements */
+}
+
 form {
     display: flex;
     justify-content: center;
@@ -71,14 +83,15 @@ form {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: gray;
 }
 
 .book-item {
     flex: 0 0 30%; /* Each book item occupies 30% of the container */
+    padding: 10px;
 }
 
-.book-img {
+.book-img { 
     width: 50%;
 }
 
