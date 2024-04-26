@@ -28,26 +28,55 @@
     </div>
     <div class="background-photo"></div>
     <div class="content">
-      <div class="about-us">
-        <h2>About us</h2>
+      <div class="welcome-message">
+        <h2>Welcome to Our Library System!</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
-          sapien a dolor ultricies vestibulum. Fusce et felis nec nulla finibus
-          lobortis. Morbi vestibulum lectus at ex tincidunt, nec feugiat purus
-          suscipit. Ut bibendum nunc id vehicula fermentum. Nam sit amet ipsum
-          quis tortor eleifend tristique a a ligula. Duis id tellus sit amet mi
-          tempus vestibulum. Integer lacinia metus a ultrices mollis. Integer
-          tincidunt augue et ultrices lacinia. Nam consectetur tempor ligula sit
-          amet fermentum.
+          Welcome to our digital library system, where adventure, knowledge, and
+          imagination await you! Dive into a world of literature, where every
+          book is a portal to new worlds and experiences. Whether you're seeking
+          a thrilling mystery, an epic fantasy, a heartfelt romance, or a
+          captivating non-fiction narrative, our library has something for
+          everyone.
+        </p>
+        <p>
+          Explore our extensive collection of books, curated to spark curiosity,
+          inspire creativity, and ignite a lifelong love for reading. From
+          classic masterpieces to contemporary bestsellers, there's always a new
+          story to discover within our virtual shelves.
+        </p>
+        <p>
+          Enjoy the convenience of browsing, borrowing, and reading from the
+          comfort of your own home. Our digital platform provides seamless
+          access to thousands of titles, accessible anytime, anywhere, with just
+          a few clicks.
+        </p>
+        <p>
+          Thank you for choosing our library system as your literary companion.
+          Embark on an enriching journey with us, where every page turn brings
+          new adventures and endless possibilities. Happy reading!
         </p>
       </div>
     </div>
 
     <footer class="footer">
       <p>&copy; <span id="year"></span> Library System. All rights reserved.</p>
-      <script>  
+      <script>
         document.getElementById("year").textContent = new Date().getFullYear();
       </script>
     </footer>
+
+    <script>
+      // Adjust margin-top of .content dynamically based on nav height
+      window.addEventListener("DOMContentLoaded", function () {
+        var navHeight = document.querySelector(".container").offsetHeight;
+        document.querySelector(".content").style.marginTop = navHeight + "px";
+      });
+
+      // Adjust margin-top of .content on window resize
+      window.addEventListener("resize", function () {
+        var navHeight = document.querySelector(".container").offsetHeight;
+        document.querySelector(".content").style.marginTop = navHeight + "px";
+      });
+    </script>
   </body>
 </html>
