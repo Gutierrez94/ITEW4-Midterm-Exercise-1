@@ -16,22 +16,25 @@
     background-position: center; /* Center the background image */
 }
 .container2 {
-    width: 80%;
-    display: block;
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between the content and image */
+    align-items: flex-start; /* Align items at the start of the container */
     margin: auto;
-    padding-top: 100px;
+    padding-top: 100px; 
+    max-width: 1200px; /* Set a max-width for larger screens */
 }
 .content-section {
-    float: left;
-    width: 55%;
+    flex: 0 0 55%;
+    margin-right: 20px;
     color: #ddd
 }
 .image-section {
-    float: right;
-    width: 40%;
+    flex: 0 0 40%; /* Flex grow, flex shrink, flex basis */
+    display: flex; /* Ensures that the img tag behaves responsively */
+    justify-content: flex-end; /* Aligns the image to the right */
 }
 .image-section img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 .content-section .title {
@@ -84,29 +87,17 @@
 }
 @media screen and (max-width: 768px) {
     .container2 {
-        width: 80%;
-        display: flex;
-        margin: auto;
+        flex-direction: column; /* Stack vertically on small screens */
         padding-top: 50px;
     }
+    .content-section, .image-section {
+        flex: 0 0 100%; /* Both sections take full width */
+    }
     .content-section {
-        float: none;
-        width: 100%;
-        display: flex;
-        margin: auto;
+        margin-right: 0; /* Remove margin between sections on small screens */
     }
-    .content-section .title {
-        text-align: center;
-        font-size: 19px;
-    }
-    .section {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #ddd;
-        background-image: url('img/lib-bg.jpg'); /* Add background image */
-        background-size: cover; /* Adjust background image size */
-        background-repeat: no-repeat; /* Prevent background image from repeating */
-        background-position: center; /* Center the background image */
+    .image-section {
+        order: -1; /* Image above the text on small screens */
     }
 }
 
@@ -168,5 +159,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1000; /* Ensure it's above all content */
+     /* Ensure it's not transparent */
   }
