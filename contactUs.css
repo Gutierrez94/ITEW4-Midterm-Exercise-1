@@ -1,3 +1,93 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #153448;
+  padding: 20px;  
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+header,nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+.footer {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.background-photo {
+  background-image: url("img/lib-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 1; 
+  padding: 20px;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+  
 /* Styles for smaller mobile phones */
 @media (max-width: 480px) {
 body {
@@ -5,7 +95,11 @@ body {
   color: #D6C3C3;
 }
 
-.contact {
+.content{
+  padding-top: 230px;
+}
+
+.content .contact {
   background-color: #153448;
   padding: 20px;
 }
@@ -16,42 +110,42 @@ body {
   gap: 10px;
 }
 
-.contact img {
+.content .contact img {
   width: 24px;
   height: 24px;
 }
 
-.location {
+.content .location {
   text-align: center;
   background-color: #0E222E;
   padding: 20px;
 }
 
-.location img{
+.content .location img{
   height: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hoursOfOperation {
+.content .hoursOfOperation {
   text-align: center;
   background-color: #153448;
   padding: 20px;
 }
 
-.feedback {
+.content .feedback {
   text-align: center;
   background-color: #93AAB9;
   padding: 25px;
   color: #0E222E;
 }
 
-.feedback .feedbackForm {
+.content .feedback .feedbackForm {
   text-align: left;
 }
 
-.feedbackForm .visitorFeedback {
+.content .feedbackForm .visitorFeedback {
   padding: 30px;
 }
 
@@ -85,7 +179,7 @@ body {
   color: #D6C3C3;
 }
 
-.contact {
+.content .contact {
   background-color: #153448;
   padding: 20px;
 }
@@ -96,42 +190,42 @@ body {
   gap: 10px;
 }
 
-.contact img {
+.content .contact img {
   width: 24px;
   height: 24px;
 }
 
-.location {
+.content .location {
   text-align: center;
   background-color: #0E222E;
   padding: 20px;
 }
 
-.location img{
+.content .location img{
   height: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hoursOfOperation {
+.content .hoursOfOperation {
   text-align: center;
   background-color: #153448;
   padding: 20px;
 }
 
-.feedback {
+.content .feedback {
   text-align: center;
   background-color: #93AAB9;
   padding: 25px;
   color: #0E222E;
 }
 
-.feedback .feedbackForm {
+.content .feedback .feedbackForm {
   text-align: left;
 }
 
-.feedbackForm .visitorFeedback {
+.content .feedbackForm .visitorFeedback {
   padding: 30px;
 }
 
@@ -156,6 +250,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.container {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+}
+
+nav {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin at the bottom of the navigation */
+}
+
+.content {
+  margin-top: 200px; /* Adjusted margin-top value to account for the navigation bar */
+  padding: 20px 10px; /* Adjusted padding for smaller screens */
+}
+
 }
 
 /* Styles for tablets */
@@ -166,7 +276,7 @@ body {
   color: #D6C3C3;
 }
 
-.contact {
+.content .contact {
   background-color: #153448;
   padding: 20px;
 }
@@ -177,42 +287,42 @@ body {
   gap: 10px;
 }
 
-.contact img {
+.content .contact img {
   width: 24px;
   height: 24px;
 }
 
-.location {
+.content .location {
   text-align: center;
   background-color: #0E222E;
   padding: 20px;
 }
 
-.location img{
+.content .location img{
   height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hoursOfOperation {
+.content .hoursOfOperation {
   text-align: center;
   background-color: #153448;
   padding: 20px;
 }
 
-.feedback {
+.content .feedback {
   text-align: center;
   background-color: #93AAB9;
   padding: 25px;
   color: #0E222E;
 }
 
-.feedback .feedbackForm {
+.content .feedback .feedbackForm {
   text-align: left;
 }
 
-.feedbackForm .visitorFeedback {
+.content .feedbackForm .visitorFeedback {
   padding: 30px;
 }
 
@@ -247,7 +357,7 @@ body {
   color: #D6C3C3;
 }
 
-.contact {
+.content .contact {
   background-color: #153448;
   padding: 20px;
 }
@@ -258,42 +368,42 @@ body {
   gap: 10px;
 }
 
-.contact img {
+.content .contact img {
   width: 24px;
   height: 24px;
 }
 
-.location {
+.content .location {
   text-align: center;
   background-color: #0E222E;
   padding: 20px;
 }
 
-.location img{
+.content .location img{
   height: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hoursOfOperation {
+.content .hoursOfOperation {
   text-align: center;
   background-color: #153448;
   padding: 20px;
 }
 
-.feedback {
+.content .feedback {
   text-align: center;
   background-color: #93AAB9;
   padding: 25px;
   color: #0E222E;
 }
 
-.feedback .feedbackForm {
+.content .feedback .feedbackForm {
   text-align: left;
 }
 
-.feedbackForm .visitorFeedback {
+.content .feedbackForm .visitorFeedback {
   padding: 30px;
 }
 
@@ -317,5 +427,4 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 }
