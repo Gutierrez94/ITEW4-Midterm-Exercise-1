@@ -22,6 +22,7 @@
     margin: auto;
     padding-top: 100px; 
     max-width: 1200px; 
+   
 }
 .content-section {
     flex: 0 0 55%;
@@ -31,7 +32,9 @@
 .image-section {
     flex: 0 0 40%; 
     display: flex; 
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    overflow: hidden; 
+    max-height: calc(90vh - 120px);
 }
 .image-section img {
     width: 100%;
@@ -85,10 +88,12 @@
 .content-section .social i:hover {
     color:#a52a2a;
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .container2 {
         flex-direction: column;
         padding-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .content-section, .image-section {
         flex: 0 0 100%; 
@@ -167,6 +172,7 @@
     padding: 10px;
     text-align: center;
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     z-index: 1000; /* Ensure it's above all content */
