@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contactUs.css">
-    <title>Contact Us</title>
+    <!-- Fontawesome link for icons used-->
+    <script
+      src="https://kit.fontawesome.com/dfcbc8b3af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Library System</title>
+    <link rel="stylesheet" href="contactUs.css" />
   </head>
   <body>
-      <!--Contact Information: Include the library's address, phone number, and email address. Adding a map can also help people locate the library.-->
-      <main>
+    <div class="container">
+      <header>
+        <h1><i class="fa-solid fa-book"></i> Library System</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BOOKS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">MEMBERSHIP</a></li>
+          <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="background-photo"></div>
+    <div class="content">
         <div class="contact">
           <h2>Contact Us</h2>
           
           <div class="info-item">
-            <img src="location.svg" alt="Library Address">
+            <i class="fa-solid fa-location-dot" style="color: #adc5ed";></i>
             <p>Fully Booked, SM City Santa Rosa <br>Expansion Building, National Road,<br> Santa Rosa, 4026 Laguna</p>
           </div>
           
           <div class="info-item">
-            <img src="phoneNum.svg" alt="Phone Number">
+            <i class="fa-solid fa-phone" style="color: #adc5ed;"></i>
             <p>09274929341</p>
           </div>
           
           <div class="info-item">
-            <img src="email.svg" alt="Email Address">
+            <i class="fa-solid fa-envelope"style="color: #adc5ed;"></i>
             <p>fullybooked@gmail.com</p>
           </div>
         </div><br>
@@ -32,10 +51,9 @@
           <h2>FIND US</h2>
           <p>We're excited to see you and help you discover your next favorite book!</p>
           <a href="https://www.google.com/maps/place/Fully+Booked,+SM+City+Santa+Rosa+Expansion+Building,+National+Road,+Santa+Rosa,+4026+Laguna/@14.3140394,121.0970846,15z/data=!4m6!3m5!1s0x3397d9fd6212856b:0x3dcaf11ffbed0a18!8m2!3d14.3140394!4d121.0970846!16s%2Fg%2F11tx_r223r">
-          <img src="FULLY BOOKED.jpg">
+          <img src="img/FULLY BOOKED.jpg">
           </a>
-        </div>
-      </main><br>
+        </div><br>
      
       <!--Hours of Operation: List opening hours and any special holiday closures.-->
       <div class="hoursOfOperation">
@@ -59,5 +77,13 @@
       <input type="submit" value="Submit">
       </form>
     </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Library System. All rights reserved.</p>
+      <script>  
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
   </body>
 </html>
