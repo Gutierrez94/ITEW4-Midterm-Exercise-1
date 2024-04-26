@@ -10,18 +10,18 @@
     width: 100%;
     min-height: 100vh;
     background-color: #ddd;
-    background-image: url('img/lib-bg.jpg'); /* Add background image */
-    background-size: cover; /* Adjust background image size */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
-    background-position: center; /* Center the background image */
+    background-image: url('img/lib-bg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 .container2 {
-    display: flex; /* Enable flexbox */
-    justify-content: space-between; /* Space between the content and image */
-    align-items: flex-start; /* Align items at the start of the container */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
     margin: auto;
     padding-top: 100px; 
-    max-width: 1200px; /* Set a max-width for larger screens */
+    max-width: 1200px; 
 }
 .content-section {
     flex: 0 0 55%;
@@ -29,9 +29,9 @@
     color: #ddd
 }
 .image-section {
-    flex: 0 0 40%; /* Flex grow, flex shrink, flex basis */
-    display: flex; /* Ensures that the img tag behaves responsively */
-    justify-content: flex-end; /* Aligns the image to the right */
+    flex: 0 0 40%; 
+    display: flex; 
+    justify-content: flex-end; 
 }
 .image-section img {
     width: 100%;
@@ -87,18 +87,28 @@
 }
 @media screen and (max-width: 768px) {
     .container2 {
-        flex-direction: column; /* Stack vertically on small screens */
+        flex-direction: column;
         padding-top: 50px;
     }
     .content-section, .image-section {
-        flex: 0 0 100%; /* Both sections take full width */
+        flex: 0 0 100%; 
     }
     .content-section {
-        margin-right: 0; /* Remove margin between sections on small screens */
+        margin-right: 0; 
     }
     .image-section {
-        order: -1; /* Image above the text on small screens */
+        order: -1; 
     }
+    .container {
+        padding: 5px 10px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    nav ul li a {
+        padding: 3px 7px;
+    }
+    
 }
 
 
@@ -141,10 +151,10 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    color: #fff;
   }
   
   nav ul li a:hover {
