@@ -1,34 +1,40 @@
-/* membership.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image: url('img/lib-bg.jpg'); /* Add background image */
+    background-size: cover; /* Adjust background image size */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center center; /* Center the background image */
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 50px; /* Add padding at the bottom to prevent overlap with footer */
 }
 
 header {
-    background-color: #333;
+    background-color: #153448;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
-h1 {
+h1, h2 {
+    text-align: center;
     margin: 0;
+    color:#fff;
+    margin-bottom: 20px;
 }
 
 .content {
     margin-top: 20px;
-    background-color: #fff;
     padding: 20px;
 }
 
 form {
+    color: white;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -61,12 +67,26 @@ button:hover {
     background-color: #555;
 }
 
+.footer {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 90%; /* Adjusted width for smaller screens */
     }
-
-    form {
-        max-width: 100%;
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('img/lib-bg.jpg'); /* Add background image */
+        background-size: cover; /* Adjust background image size */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-position: center; /* Center the background image */
     }
 }

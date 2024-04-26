@@ -158,4 +158,5 @@ button[type="submit"] i {
         flex: 0 0 100%; /* Adjust size of book items for smaller screens */
         margin-bottom: 20px; /* Add some space between items */
     }
+
 }
